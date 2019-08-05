@@ -1,0 +1,54 @@
+.divm
+{
+background: url(Img1.jpg);
+  background-repeat: no-repeat;
+  background-size:100%,100%;
+opacity: 0.8;
+  filter: alpha(opacity=30);
+/*webkit-filter: grayscale(100%);
+  filter: grayscale(100%);*/
+
+height: 101%;
+    width: 101%;
+margin-top:-7px;
+margin-left:-8px;
+border:1px solid black;
+
+}
+
+
+
+.div1
+{
+border: groove;
+    width: 500px;
+    height: 436px;
+    margin: 2px 0px 0px 394px;
+}
+.table
+{
+    height: 359px;
+    width: 423px;
+    font-size: 24px;
+    margin-top: -17px;
+}
+.input
+{
+height: 35px;
+    width: 250px;
+}
+.login
+{
+font-size: 25px;
+    margin: -52px 0px 0px 68px;
+}
+.sign
+{
+font-size: 25px;
+    margin-top: -52px;
+}
+.h1
+{
+text-align:center;
+color:gray;
+}

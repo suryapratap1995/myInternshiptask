@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html {
+  scroll-behavior: smooth;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Smooth Scroll</h1>
+
+  <a href="scroll.html">Click Me to Smooth Scroll to Section 1 Above</a>
+</div>
+
+</body>
+</html>
+<script>
+$(document).ready(function(a) {
+    $('a[href^="scroll2.html"]').not("#quote-carousel a, ul.nav-pills a, div#accordian a").on("click", function(a) {
+        a.preventDefault();
+        var b = this.hash,
+            c = $(b);
+        $("html, body").stop().animate({
+            scrollTop: c.offset().top - 50
+        }, 900, "swing", function() {
+            window.location.hash = b
+        })
+    })
+});
+</script>

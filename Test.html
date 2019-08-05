@@ -1,0 +1,95 @@
+
+<div id="myProgress">
+  <div id="myBar"></div>
+</div>
+</br>
+<div id="Progress">
+  <div id="Bar"></div>
+</div>
+</br>
+<div id="Prog">
+  <div id="my"></div>
+</div>
+<style>
+
+#myProgress {
+  width: 100%;
+  background-color: grey;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: green;
+}
+
+#Progress {
+  width: 100%;
+  background-color: grey;
+}
+
+#Bar {
+  width: 1%;
+  height: 30px;
+  background-color: green;
+}
+#Prog {
+  width: 100%;
+  background-color: grey;
+}
+
+#my {
+  width: 1%;
+  height: 30px;
+  background-color: green;
+}
+</style>
+<script>
+
+function myFunction() {
+  var elem = document.getElementById("myBar"); 
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+    }
+  }
+}
+
+function myFunction1() {
+  var elem = document.getElementById("Bar"); 
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+    }
+  }
+}
+
+function myFunction2() {
+  var elem = document.getElementById("my"); 
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+    }
+  }
+}
+
+
+   myFunction();
+myFunction1();
+myFunction2();
+</script>
